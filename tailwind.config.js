@@ -1,0 +1,75 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    screens: {
+      xs: "380px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
+    extend: {
+      colors: {
+        // Premium palette
+        gold: "#D4AF37",
+        luxeGold: "#EAB308",
+        saffronGold: "#D4A574",
+        deepGold: "#C7A867",
+        burnedOrange: "#C85A28",
+        saffronYellow: "#F39C12",
+        turmeric: "#E8A635",
+        deepMaroon: "#5A2E1F",
+        warmBronze: "#8B6534",
+        desiBlack: "#0F172A",
+        charcoal: "#1F2937",
+        luxeText: "#0F172A",
+        luxeGray: "#475569",
+        creamBeige: "#F7F3ED",
+        emeraldGreen: "#1B6F4F",
+        darkCharcoal: "#2C2C2C",
+      },
+      fontFamily: {
+        playfair: ["'Playfair Display'", "serif"],
+        lora: ["'Lora'", "serif"],
+        montserrat: ["'Montserrat'", "sans-serif"],
+        sans: ["'Poppins'", "sans-serif"],
+      },
+      spacing: {
+        18: "4.5rem",
+        22: "5.5rem",
+      },
+      fontSize: {
+        xs: ["0.75rem", { lineHeight: "1rem" }],
+        sm: ["0.875rem", { lineHeight: "1.25rem" }],
+        base: ["1rem", { lineHeight: "1.5rem" }],
+        lg: ["1.125rem", { lineHeight: "1.75rem" }],
+        xl: ["1.25rem", { lineHeight: "1.75rem" }],
+        "2xl": ["1.5rem", { lineHeight: "2rem" }],
+        "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
+      },
+      boxShadow: {
+        sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+        md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+        xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      },
+      // Enable opacity modifiers for all custom colors
+      opacity: {
+        5: "0.05",
+        10: "0.1",
+        15: "0.15",
+        20: "0.2",
+        30: "0.3",
+        40: "0.4",
+        50: "0.5",
+        60: "0.6",
+        70: "0.7",
+        80: "0.8",
+        90: "0.9",
+      },
+    },
+  },
+  plugins: [],
+};
